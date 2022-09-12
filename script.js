@@ -47,10 +47,10 @@ let questionBox = document.getElementById("questionBox");
 let allInputs = document.querySelectorAll("input[type='radio']")
 const loadQuestion = () => {
     if (total === index) {
-        return quizEnd()
+        return quizEnd();
     }
-    reset()
-    const data = quizData[index]
+    reset();
+    const data = quizData[index];
     questionBox.innerHTML = `${index + 1}) ${data.question}`
     allInputs[0].nextElementSibling.innerText = data.a
     allInputs[1].nextElementSibling.innerText = data.b
@@ -95,10 +95,12 @@ const reset = () => {
 }
 
 const quizEnd = () => {
-    // console.log(document.getElementsByClassName("container"));
     document.getElementsByClassName("container")[0].innerHTML = `
         <div class="col">
             <h3 class="w-100"> Hii, you've scored ${correct} / ${total} </h3>
+        </div>
+        <div >
+            <button onclick="location.reload()" class="col1">Reload</button>
         </div>
     `
 }
