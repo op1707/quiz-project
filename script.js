@@ -95,13 +95,13 @@ const reset = () => {
 }
 
 const quizEnd = () => {
-    document.getElementsByClassName("container")[0].innerHTML = `
-        <div class="col">
-            <h3 class="w-100"> Hii, you've scored ${correct} / ${total} </h3>
+  document.getElementsByClassName("container")[0].innerHTML = `
+        <div  class="col">
+            <h3 > Hii, you've scored ${correct} / ${total} </h3>
         </div>
         <div >
             <button onclick="location.reload()" class="col1">Reload</button>
         </div>
-    `
+        `
 }
 loadQuestion(index);
