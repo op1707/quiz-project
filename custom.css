@@ -21,14 +21,24 @@
     display: flex;
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
     flex-direction: column;
 }
 
 .col {
+   display: flex; 
     text-align: justify;
     padding: 15px;
     width: 95%;
+}
+.col1{
+    width: 100%;
+    background-color: rgb(47, 8, 73);
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    
 }
 
 #submit {
