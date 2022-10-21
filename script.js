@@ -56,7 +56,7 @@ const loadQuestion = () => {
     allInputs[1].nextElementSibling.innerText = data.b
     allInputs[2].nextElementSibling.innerText = data.c
     allInputs[3].nextElementSibling.innerText = data.d
-    allInputs[4].nextElementSibling.innerText = data.e
+   
 }
 
 document.querySelector("#submit").addEventListener(
